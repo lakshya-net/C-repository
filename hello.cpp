@@ -14,7 +14,7 @@ using namespace std;
       cin >> B[x][y];
     }
    }
-   //sum of matrix
+   //sum of matrices
    for(x=0; x<3;x++){
     for(y=0;y<3;y++){
     C[x][y]=A[x][y]+B[x][y];
