@@ -1,14 +1,28 @@
 #include <iostream>
 using namespace std;
 
-bool prime(int n) {
-    for (int i = 2; i * i <= n; ++i) {
-        if (n % i == 0) return false;
+int power(int base, int exp) {
+    int result = 1;
+    for (int i = 0; i < exp; ++i) {
+        result *= base;
     }
-    return true;
+    return result;
 }
 
- main() {
-   cout << prime(6);
-    return true;
+int factorial(int num) {
+    int result2 = 1;
+    for (int i = 2; i <= num; ++i) {
+        result2 *= i;
+    }
+    return result2;
+}
+
+int main() {
+    int sum = 0,n;
+    cin>>n;
+    for (int k = 1; k <= n; ++k) {
+       sum += power(2*k,k+2) / factorial(k+2);
+    }
+    cout << sum << endl;
+    return 0;
 }
