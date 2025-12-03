@@ -1,31 +1,32 @@
 #include <iostream>
-
+using namespace std;
+int fib(int t);
+int a = 0, b = 1, nextTerm , limit;
 int main() {
-    int limit;
-    int a = 0, b = 1, nextTerm;
+    
+    cout << "Enter the limit: ";
+    cin >> limit;
 
-    std::cout << "Enter the limit: ";
-    std::cin >> limit;
-
-    std::cout << "Fibonacci Series up to " << limit << ":\n";
+    cout<<fib(limit);
+    return 0;
+}
+int fib(int t){
 
     if (limit >= 0) {
-        std::cout << a << " ";
+        cout << a << " ";
     }
     if (limit >= 1) {
-        std::cout << b << " ";
+        cout << b << " ";
     }
 
     nextTerm = a + b;
 
     while (nextTerm <= limit) {
-        std::cout << nextTerm << " ";
+        cout << nextTerm << " ";
         a = b;
         b = nextTerm;
         nextTerm = a + b;
     }
-
-    std::cout << std::endl;
-
-    return 0;
+    return ; 
 }
+    
