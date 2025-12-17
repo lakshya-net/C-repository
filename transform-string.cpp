@@ -17,7 +17,6 @@ int main()
         else if(isdigit(s[i])){
         s1+=s[i];
         }
-       
         else{
             s2+=s[i];
         }
