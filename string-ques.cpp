@@ -13,7 +13,8 @@ int main() {
             cin>>a[i][j];
         }
     }
-    cout<<a[0][0]<<" "<<a[M-1][N-1];
+   for(int x=0; x<M; x++){
+    cout<<a[x][0].length()<<" "<<a[x][N-1].length()<<endl;
+}
     return 0;
-
 }
