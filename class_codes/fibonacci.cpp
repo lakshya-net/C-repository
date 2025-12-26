@@ -8,23 +8,11 @@ int main() {
     cout<<fib(limit);
     return 0;
 }
-int fib(int t){
-
-    if (limit >= 0) {
-        cout << a << " ";
+int fib(int n) {
+    if (n <= 1) {
+        return n;
+    } 
+    else {    
+        return fib(n - 1) + fib(n - 2);
     }
-    if (limit >= 1) {
-        cout << b << " ";
-    }
-
-    nextTerm = a + b;
-
-    while (nextTerm <= limit) {
-        cout << nextTerm << " ";
-        a = b;
-        b = nextTerm;
-        nextTerm = a + b;
-    }
-    return ; 
 }
-    
