@@ -14,11 +14,11 @@ int main() {
 
 
     int B[n] = {0};
-    int j = 0;
+    int j = -1;
     for (int i = 0; i < n; i++) {
         if (A[i] == x) {
-            B[j] = i+1;
             j++;
+            B[j] = i+1;
         }
     }
 
