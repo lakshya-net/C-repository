@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 int binarySearch(int A[], int n, int x) {
@@ -16,4 +17,15 @@ int binarySearch(int A[], int n, int x) {
         }
     }
     return -1;
+}
+
+int main(){
+    int n,x;
+    cin>>n>>x;
+    int A[n];
+    for(int i=0;i<n;i++){
+        cin>>A[i];
+    }
+    int result =binarySearch( *A[], n, x);
+    cout<<result;
 }
