@@ -25,7 +25,8 @@ node* create_cll()
 {
     int value;
     cin>>value;
-    node *ptr,*nptr,*start;
+    node *
+    ptr,*nptr,*start;
     ptr=create_node(value);
     start=ptr;
     int ch;
