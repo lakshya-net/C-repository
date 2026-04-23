@@ -83,7 +83,7 @@ void reverse(node* start){
         q->link=r;
         r=q;
     }
-    p->link=q;
+     p->link=q;
     start=p;
 }
 
@@ -91,4 +91,5 @@ int main(){
     node* start;
     start=create_sll();
     reverse(start);
+    traverse(start);
 }
