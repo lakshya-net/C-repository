@@ -17,8 +17,8 @@ node* create_node(int value){
 }
 node* create_sll(){
     int value;
-    cin>>value;
     node *ptr,*nptr,*start;
+    cin>>value;
     ptr=create_node(value);
     start=ptr;
     int ch;
@@ -34,7 +34,7 @@ node* create_sll(){
 }
 
 void traverse(node* temp){
-    while(temp->link!=NULL){
+    while(temp->link!=NULL){ 
         cout<<temp->info<<" ";
         temp=temp->link;
     }
