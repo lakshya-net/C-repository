@@ -17,9 +17,7 @@ int main() {
             max_val = A[i];
         }
     }
-
-      
-    
+ 
     vector<int> count(max_val + 1, 0);
     for (int i = 0; i < n; i++) {
         count[A[i]]++;
@@ -32,6 +30,9 @@ int main() {
         output[count[A[i]] - 1] = A[i];
         count[A[i]]--;
     }
+
+
+
 
     for (int i = 0; i < n; i++) {
         cout << output[i] << " ";

@@ -33,8 +33,9 @@ node* create_sll(){
     return start;
 }
 
-void traverse(node* temp){
-    while(temp->link!=NULL){ 
+void traverse(node* start){
+    node*temp=start;
+    while(temp!=NULL){ 
         cout<<temp->info<<" ";
         temp=temp->link;
     }
@@ -71,6 +72,22 @@ node* delete_loc(node *start){
     temp->link=temp1->link;
     delete temp1;
 
+}
+node* delete_lastnode(node *start){
+    if(start == NULL){
+        return NULL;
+    }
+    if(start->link == NULL){
+        delete start;
+        return NULL;
+    }
+    node* temp = start;
+    while(temp->link->link != NULL){
+        temp = temp->link;
+    }
+    delete temp->link;
+    temp->link = NULL;
+    return start; 
 }
 
 void reverse(node* start){
