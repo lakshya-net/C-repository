@@ -33,6 +33,9 @@ int main (){
     s4.getdata();
     s5.getdata();
 
+
+
+    
     s1.display();
     s2.display();
     s3.display();
