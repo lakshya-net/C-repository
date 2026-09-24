@@ -17,7 +17,7 @@ int partition (int arr[], int low, int high) {
             swap(arr[start],arr[end]);
         }
     }
-    swap(arr[low], arr[end]);
+    swap(pivot, arr[end]);
     return end;
 }
 
@@ -45,5 +45,5 @@ int main(){
     for(int i=0; i<n; i++){
         cout << arr[i] << " ";
     }
-    return 0;.
+    return 0;
 }
